@@ -1,5 +1,5 @@
 import {Text, View} from "react-native";
-import {Container} from "@/app/(telaInicial)/Style/Style.";
+import {Container} from "@/src/styles/telaInicial";
 
 export default function TodasAsOrdens(){
 

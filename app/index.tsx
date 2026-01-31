@@ -1,19 +1,27 @@
 import { Text, View, Pressable, Button } from "react-native";
 import { Link, useRouter } from 'expo-router';
+import {ButtonsArea, Container, Logo, LogoContainer, StyledButton, TextButton} from "@/src/styles/indexStyle";
+import image from "../assets/images/image2.jpg";
+
+
 export default function Index() {
 
     const router = useRouter();
 
     return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-            <Text>Logo</Text>
-            <Button
-                title="Login"
-                onPress={() => router.push('/Login')}
-            />
-            <Button title={"Cadastrar-se"}
-            onPress={() => router.push("/Registro")}
-            />
-        </View>
+        <Container>
+            <LogoContainer>
+                <Logo source={image}/>
+            </LogoContainer>
+            <ButtonsArea>
+                <StyledButton onPress={() => router.push('/Login')}>
+                    <TextButton>Logar</TextButton>
+                </StyledButton>
+                <StyledButton onPress={() => router.push("/Registro")}>
+                    <TextButton>Cadastrar</TextButton>
+                </StyledButton>
+            </ButtonsArea>
+
+        </Container>
     );
 }

@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14cd1284-4707-4219-9807-296070d98668" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(telaInicial)/_layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/declarations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/indexStyle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/Style/Style..tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/telaInicial.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +54,7 @@
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/marco/Documents/Ordinis/app/(telaInicial)",
+    "last_opened_file_path": "C:/Users/marco/Documents/Ordinis/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,9 +67,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\Documents\Ordinis\assets\images" />
       <recent name="C:\Users\marco\Documents\Ordinis\app\(telaInicial)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\Documents\Ordinis\src\styles" />
+      <recent name="C:\Users\marco\Documents\Ordinis\src" />
       <recent name="C:\Users\marco\Documents\Ordinis\app\(autenticacao)" />
       <recent name="C:\Users\marco\Documents\Ordinis\app\autenticacao\login" />
     </key>
@@ -81,7 +94,9 @@
       <workItem from="1769679459892" duration="10000" />
       <workItem from="1769679472589" duration="3198000" />
       <workItem from="1769727916396" duration="905000" />
-      <workItem from="1769728846972" duration="3136000" />
+      <workItem from="1769728846972" duration="3172000" />
+      <workItem from="1769812996878" duration="4174000" />
+      <workItem from="1769820788282" duration="1693000" />
     </task>
     <servers />
   </component>
