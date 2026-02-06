@@ -6,7 +6,10 @@ export default function TabLayout() {
 
             <Tabs.Screen
                 name="TodasAsOrdens"
-                options={{ title: 'Todas as Ordens' }}
+                options={{
+                    title: 'Todas as Ordens',
+                    headerTitleAlign: 'center',
+            }}
             />
 
             {/* Aqui você "batiza" cada arquivo com um nome amigável */}

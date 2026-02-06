@@ -33,7 +33,7 @@ export default function Login(){
                     </InputArea>
                    <ButtonsArea>
                        <StyledButton>
-                           <GenericText>Logar</GenericText>
+                           <GenericText onPress={() => router.push("/TodasAsOrdens")}>Logar</GenericText>
                        </StyledButton>
                    </ButtonsArea>
                 </Container>

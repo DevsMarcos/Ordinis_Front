@@ -35,4 +35,18 @@ export const StyledButton = styled.TouchableOpacity.attrs({
     
 `
 
+export const InputArea = styled.View`
+    width: 90%;
+    align-items: flex-start;
+    margin-bottom: 5%;
+    flex-direction: row;
+`
+export const Input = styled.TextInput`
+    width: 100%;
+    height: 60px;
+    background: #d9d9d9;
+    border-radius: 25px;
+    padding-left: 10px;
+`
+
 
