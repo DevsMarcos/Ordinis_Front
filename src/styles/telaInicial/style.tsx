@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.View`
     flex: 1;
-    padding-top: 10%;
+    padding-top: 20%;
     align-items: center;
 
 `
@@ -27,11 +27,10 @@ export const OsInformatrionArea = styled.View`
 `
 
 export const StatusOrdem = styled.View`
-    width: 20%;
+    width: 15%;
     height: 100%;
-    border-radius: 25px;
+    border-radius: 250px;
     background: green;
-
 `
 
 export const OsInformatrion = styled.View`

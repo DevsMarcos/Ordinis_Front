@@ -20,7 +20,7 @@ export default function TodasAsOrdens(){
                     <OsInformatrion>
                         <GenericText>Cliente: Marcos Macêdo</GenericText>
                         <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado</GenericText>
+                        <GenericText>Data finalizado: 30/12/2025</GenericText>
                         <GenericText>Valor: 0.00</GenericText>
                     </OsInformatrion>
                 </Card>
