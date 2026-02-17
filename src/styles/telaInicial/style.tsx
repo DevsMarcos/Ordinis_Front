@@ -10,7 +10,7 @@ export const Container = styled.View`
 export const Card = styled.TouchableOpacity`
     width: 90%;
     height: 25%;
-    background: #ececec;
+    background: #fff;
     border-radius: 25px;
     /* noinspection CssUnknownProperty */
     elevation: 50;
@@ -25,12 +25,14 @@ export const OsInformatrionArea = styled.View`
     align-items: center;
     flex-direction: row;  
 `
-
-export const StatusOrdem = styled.View`
+interface StatusProps{
+    status?: string
+}
+export const StatusOrdem = styled.View<StatusProps>`
     width: 15%;
     height: 100%;
     border-radius: 250px;
-    background: green;
+    background: ${props => props.status || '#228b22'};
 `
 
 export const OsInformatrion = styled.View`

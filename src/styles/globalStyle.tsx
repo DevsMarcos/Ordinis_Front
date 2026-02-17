@@ -13,13 +13,16 @@ interface TextoProps {
 
     paddingLeft?: number;
 
+    marginBottom?: number;
+
 }
 export const GenericText = styled.Text<TextoProps>`
     font-family: "Roboto Bold";
-    font-size: ${props => props.tamanho || 16};
+    font-size: ${props => props.tamanho || 16}px;
     color: ${props => props.cor || "#000"};
     font-weight: bold;
-    padding-left: ${ props => props.paddingLeft };
+    padding-left: ${ props => props.paddingLeft }px;
+    margin-bottom: ${props => props.marginBottom}px;
 `
 
 export const StyledButton = styled.TouchableOpacity.attrs({
