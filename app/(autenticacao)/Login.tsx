@@ -32,8 +32,8 @@ export default function Login(){
                         <Input placeholder={"Senha"} secureTextEntry ></Input>
                     </InputArea>
                    <ButtonsArea>
-                       <StyledButton>
-                           <GenericText onPress={() => router.push("/TodasAsOrdens")}>Logar</GenericText>
+                       <StyledButton onPress={() => router.push("/TodasAsOrdens")}>
+                           <GenericText >Logar</GenericText>
                        </StyledButton>
                    </ButtonsArea>
                 </Container>
