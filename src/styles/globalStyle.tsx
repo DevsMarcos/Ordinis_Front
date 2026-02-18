@@ -42,11 +42,17 @@ export const InputArea = styled.View`
     width: 90%;
     align-items: flex-start;
     margin-bottom: 5%;
-    flex-direction: row;
+    flex-direction: column;
+    
 `
-export const Input = styled.TextInput`
+
+interface InputProps {
+
+    height?: number
+}
+export const Input = styled.TextInput<InputProps>`
     width: 100%;
-    height: 60px;
+    height: ${props => props.height || 60}px;
     background: #d9d9d9;
     border-radius: 25px;
     padding-left: 10px;

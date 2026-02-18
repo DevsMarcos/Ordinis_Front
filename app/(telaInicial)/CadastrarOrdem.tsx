@@ -18,23 +18,28 @@ export default function CadastrarOrdem(){
                 tamanho={24}>
                     Cadastrar Ordem
                 </GenericText>
-                    <GenericText>Nome do Cliente</GenericText>
                     <InputArea>
-                    <Input placeholder={'Informe o nome do cliente'}/>
+                        <GenericText paddingLeft={10}>Nome do Cliente</GenericText>
+                        <Input placeholder={'Informe o nome do cliente'}/>
                 </InputArea>
-                    <GenericText>Cadastrar Ordem</GenericText>
                     <InputArea>
-                    <Input placeholder={'Informe o número de telefone do cliente'}/>
+                        <GenericText paddingLeft={10}>Numero de telefone</GenericText>
+                        <Input placeholder={'Informe o número de telefone do cliente'}/>
                 </InputArea>
-                <InputArea>
-                    <Input placeholder={'Digite a marca do equipamento'}/>
+                    <InputArea>
+                        <GenericText paddingLeft={10}>Marca do Equipamento</GenericText>
+                        <Input placeholder={'Digite a marca do equipamento'}/>
                 </InputArea>
-                <InputArea>
-                    <Input placeholder={'Digite o Modelo do equipamento'}/>
-                </InputArea>
-                <InputArea>
-                    <Input placeholder={'Informe o defeito do equipamento'}/>
-                </InputArea>
+                    <InputArea>
+                        <GenericText paddingLeft={10}>Modelo do equipamento</GenericText>
+                        <Input placeholder={'Digite o Modelo do equipamento'}/>
+                    </InputArea>
+
+                    <InputArea>
+                        <GenericText  paddingLeft={10}>Defeito</GenericText>
+                        <Input placeholder={'Informe o defeito do equipamento'} height={150}/>
+                    </InputArea>
+
                <ButtonsArea>
                    <StyledButton>
                        <TextButton>Adicionar Fotografia</TextButton>
