@@ -21,7 +21,7 @@ export default function TodasAsOrdens(){
                 </InputArea>
                 <Card>
                     <OsInformatrionArea>
-                        <GenericText>ORDEM: 12345</GenericText>
+                        <GenericText>ORDEM: 123</GenericText>
                         <StatusOrdem />
                     </OsInformatrionArea>
                     <OsInformatrion>
