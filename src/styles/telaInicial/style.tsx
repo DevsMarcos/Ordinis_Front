@@ -57,6 +57,7 @@ export const StyledScrollView = styled.ScrollView.attrs({
         paddingBottom: 30, // Dá um respiro no final da lista
         paddingTop: '10%',
         alignItems: 'center', // Centraliza tudo horizontalmente
+
     }
 })`
     flex: 1;

@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14cd1284-4707-4219-9807-296070d98668" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(telaInicial)/Configuracoes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Componentes/DirectoryOption.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Componentes/Camera/Camera.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/Perfil.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/telaInicial.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/Configuracoes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/Configuracoes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Componentes/DirectoryOption.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componentes/DirectoryOption/DirectoryOption.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Componentes/DirectoryOptionStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componentes/DirectoryOption/DirectoryOptionStyle.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/telaInicial/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/telaInicial/style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -69,6 +70,7 @@
       <recent name="C:\Users\marco\Documents\Ordinis\app\(telaInicial)" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\Documents\Ordinis\src\Componentes\DirectoryOption" />
       <recent name="C:\Users\marco\Documents\Ordinis\src\styles" />
       <recent name="C:\Users\marco\Documents\Ordinis\src" />
       <recent name="C:\Users\marco\Documents\Ordinis\app\(autenticacao)" />
@@ -105,7 +107,11 @@
       <workItem from="1771415169037" duration="516000" />
       <workItem from="1771415746622" duration="6458000" />
       <workItem from="1771800667397" duration="601000" />
-      <workItem from="1773511524599" duration="5055000" />
+      <workItem from="1773511524599" duration="5189000" />
+      <workItem from="1773620394378" duration="220000" />
+      <workItem from="1773621073017" duration="46000" />
+      <workItem from="1774206818354" duration="489000" />
+      <workItem from="1774212524214" duration="1906000" />
     </task>
     <servers />
   </component>
