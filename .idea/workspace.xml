@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14cd1284-4707-4219-9807-296070d98668" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Componentes/Camera/Camera.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Componentes/OS/OrdemDeServico.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Componentes/OS/styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(telaInicial)/Configuracoes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/Configuracoes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componentes/DirectoryOption.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componentes/DirectoryOption/DirectoryOption.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Componentes/DirectoryOptionStyle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Componentes/DirectoryOption/DirectoryOptionStyle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(telaInicial)/TodasAsOrdens.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/telaInicial/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/telaInicial/style.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,14 +45,19 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/marco/Documents/Ordinis/assets/images&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/marco/Documents/Ordinis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -111,7 +116,8 @@
       <workItem from="1773620394378" duration="220000" />
       <workItem from="1773621073017" duration="46000" />
       <workItem from="1774206818354" duration="489000" />
-      <workItem from="1774212524214" duration="1906000" />
+      <workItem from="1774212524214" duration="3692000" />
+      <workItem from="1774222137389" duration="3280000" />
     </task>
     <servers />
   </component>

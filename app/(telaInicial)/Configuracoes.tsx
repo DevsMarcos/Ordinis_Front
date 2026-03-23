@@ -1,5 +1,5 @@
 import {GenericText, GlobalContainer} from "@/src/styles/globalStyle";
-import {Card, Container, StyledScrollView} from "@/src/styles/telaInicial/style";
+import { Container, StyledScrollView} from "@/src/styles/telaInicial/style";
 import DirectoryOption from "@/src/Componentes/DirectoryOption/DirectoryOption";
 import Feather from '@expo/vector-icons/Feather';
 import Ionicons from '@expo/vector-icons/Ionicons';

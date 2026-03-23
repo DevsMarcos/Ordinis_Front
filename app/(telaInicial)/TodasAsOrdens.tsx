@@ -1,16 +1,12 @@
-import {FlatList, Text, View} from "react-native";
-import {GenericText, GlobalContainer, Input, InputArea} from "@/src/styles/globalStyle";
+import { GlobalContainer, Input, InputArea} from "@/src/styles/globalStyle";
 import {
-    Card,
     Container,
-    OsInformatrion,
-    OsInformatrionArea,
-    StatusOrdem, StyledScrollView
+    StyledScrollView
 } from "@/src/styles/telaInicial/style";
 import {Image} from "expo-image";
+import OrdemDeServico from "@/src/Componentes/OS/OrdemDeServico";
 
 export default function TodasAsOrdens(){
-
     return(
         <GlobalContainer>
             <Container>
@@ -19,66 +15,15 @@ export default function TodasAsOrdens(){
                     <Image source={'../../'}/>
                     <Input placeholder={'Pesquise o ID da OS ou o Nome do Cliente'}/>
                 </InputArea>
-                <Card>
-                    <OsInformatrionArea>
-                        <GenericText>ORDEM: 123</GenericText>
-                        <StatusOrdem />
-                    </OsInformatrionArea>
-                    <OsInformatrion>
-                        <GenericText>Cliente: Marcos Macêdo</GenericText>
-                        <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado: 30/12/2025</GenericText>
-                        <GenericText>Valor: 0.00</GenericText>
-                    </OsInformatrion>
-                </Card>
-                <Card>
-                    <OsInformatrionArea>
-                        <GenericText>ORDEM: 12345</GenericText>
-                        <StatusOrdem />
-                    </OsInformatrionArea>
-                    <OsInformatrion>
-                        <GenericText>Cliente: Marcos Macêdo</GenericText>
-                        <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado: 30/12/2025</GenericText>
-                        <GenericText>Valor: 0.00</GenericText>
-                    </OsInformatrion>
-                </Card>
-                <Card>
-                    <OsInformatrionArea>
-                        <GenericText>ORDEM: 12345</GenericText>
-                        <StatusOrdem />
-                    </OsInformatrionArea>
-                    <OsInformatrion>
-                        <GenericText>Cliente: Marcos Macêdo</GenericText>
-                        <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado: 30/12/2025</GenericText>
-                        <GenericText>Valor: 0.00</GenericText>
-                    </OsInformatrion>
-                </Card>
-                <Card>
-                    <OsInformatrionArea>
-                        <GenericText>ORDEM: 12345</GenericText>
-                        <StatusOrdem />
-                    </OsInformatrionArea>
-                    <OsInformatrion>
-                        <GenericText>Cliente: Marcos Macêdo</GenericText>
-                        <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado: 30/12/2025</GenericText>
-                        <GenericText>Valor: 0.00</GenericText>
-                    </OsInformatrion>
-                </Card>
-                <Card>
-                    <OsInformatrionArea>
-                        <GenericText>ORDEM: 12345</GenericText>
-                        <StatusOrdem />
-                    </OsInformatrionArea>
-                    <OsInformatrion>
-                        <GenericText>Cliente: Marcos Macêdo</GenericText>
-                        <GenericText>Data entrada: 22/12/2025</GenericText>
-                        <GenericText>Data finalizado: 30/12/2025</GenericText>
-                        <GenericText>Valor: 0.00</GenericText>
-                    </OsInformatrion>
-                </Card>
+
+                <OrdemDeServico
+                ID={12345}
+                NomeCliente={"Marcos"}
+                ValorFinal={20}
+                DataEntrada={new Date()}
+                DataFinalizado={new Date()}
+                />
+
                 </StyledScrollView>
             </Container>
         </GlobalContainer>
