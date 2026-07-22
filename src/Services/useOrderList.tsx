@@ -2,17 +2,20 @@ import api from "./api";
 
 type Order = {
   id: number;
-  nomeDoCliente: String;
-  telefone: String;
-  produto: String;
-  marca: String;
-  modelo: String;
-  caracteristicaProduto: String;
+  status: string;
+  nomeDoCliente: string;
+  telefone: string;
+  produto: string;
+  marca: string;
+  modelo: string;
+  caracteristicaProduto: string;
+  dataDeAbertura: string;
+  dataFechamento: string;
 };
 
-export const useOrderList = {
-  fetchOrder: async (id: number): Promise<Order> => {
-    const response = await api.get<Order>(`ordens/buscarPorId/${id}`);
+export const OrderListService = {
+  fetchAllOrders: async (): Promise<Order[]> => {
+    const response = await api.get<Order[]>(`ordens/buscarOrdens`);
 
     return response.data;
   },
