@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { OrdemDeServico } from "../interfaces/OrdemDeServico";
+import { OrdemDeServicoDTO } from "../interfaces/OrdemDeServico";
 import { OrderListService } from "../Services/useOrderList";
 
 export default function useFetchOrderList() {
-  const [ordem, setOrdem] = useState<OrdemDeServico[]>([]);
+  const [ordem, setOrdem] = useState<OrdemDeServicoDTO[]>([]);
   const [loading, setLoading] = useState(false);
   const isLoadingRef = useRef(false);
 

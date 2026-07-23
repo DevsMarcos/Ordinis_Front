@@ -1,4 +1,4 @@
-export interface OrdemDeServico {
+export interface OrdemDeServicoDTO {
   id: number;
   status: string;
   nomeDoCliente: String;
