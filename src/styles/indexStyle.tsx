@@ -19,7 +19,7 @@ export const StyledButton = styled.TouchableOpacity.attrs({
 })`
   width: 100%;
   height: 60px; /* Agora ele vai obedecer */
-  background-color: #26c8d4;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
   border-radius: 10px;

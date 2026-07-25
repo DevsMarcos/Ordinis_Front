@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const GlobalContainer = styled.View`
   flex: 1;
-  background: #f3ebeb;
+  background: #150039;
 `;
 
 interface TextoProps {
@@ -17,7 +17,7 @@ interface TextoProps {
 export const GenericText = styled.Text<TextoProps>`
   font-family: "Roboto Bold";
   font-size: ${(props) => props.tamanho || 16}px;
-  color: ${(props) => props.cor || "#000"};
+  color: ${(props) => props.cor || "#ffffff"};
   font-weight: bold;
   padding-left: ${(props) => props.paddingLeft}px;
   margin-bottom: ${(props) => props.marginBottom}px;
