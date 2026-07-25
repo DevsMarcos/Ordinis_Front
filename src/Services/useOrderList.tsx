@@ -34,4 +34,10 @@ export const OrderService = {
 
     return response.data;
   },
+
+  fetchOrderByID: async (id: number): Promise<Order> => {
+    const response = await api.get<Order>(`ordens/buscarPorId/${id}`);
+
+    return response.data;
+  },
 };
