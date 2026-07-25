@@ -8,7 +8,7 @@ type Parameter = {
 };
 
 export default function useFetchOrderById(id: number) {
-  const [ordem, setOrdem] = useState<OrdemDeServicoDTO | null>();
+  const [ordem, setOrdem] = useState<OrdemDeServicoDTO | null>(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -30,5 +30,6 @@ export default function useFetchOrderById(id: number) {
   return {
     ordem,
     loading,
+    fetchOrdem,
   };
 }

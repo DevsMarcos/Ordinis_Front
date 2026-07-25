@@ -8,12 +8,13 @@ import { OrdemDeServicoDTO } from "@/src/interfaces/OrdemDeServico";
 import { GenericText } from "@/src/styles/globalStyle";
 
 interface Props {
-  ordem: OrdemDeServicoDTO; // Mude de Double para number
+  ordem: OrdemDeServicoDTO;
+  onPress?: () => void; // Mude de Double para number
 }
 
-export default function OrdemDeServico({ ordem }: Props) {
+export default function OrdemDeServico({ ordem, onPress }: Props) {
   return (
-    <Card>
+    <Card onPress={onPress}>
       <OsInformatrionArea>
         {/* Converta o ID para String se ainda der erro */}
         <GenericText cor="#000">ORDEM: {String(ordem.id)}</GenericText>

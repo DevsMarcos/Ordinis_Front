@@ -8,6 +8,7 @@ import {
 } from "@/src/styles/globalStyle";
 import { Container } from "@/src/styles/telaInicial/style";
 import { Image } from "expo-image";
+import { router } from "expo-router";
 import {
   ActivityIndicator,
   FlatList,
@@ -49,7 +50,12 @@ export default function TodasAsOrdens() {
                 </Text>
               )
             }
-            renderItem={({ item }) => <OrdemDeServico ordem={item} />}
+            renderItem={({ item }) => (
+              <OrdemDeServico
+                ordem={item}
+                onPress={() => router.push(`/detalhesOs/${item.id}`)}
+              />
+            )}
           />
         </CardsArea>
       </Container>
