@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { OrdemDeServicoDTO } from "../interfaces/OrdemDeServico";
-import { OrderListService } from "../Services/useOrderList";
+import { OrderService } from "../Services/useOrderList";
 
 export default function useFetchOrderList() {
   const [ordem, setOrdem] = useState<OrdemDeServicoDTO[]>([]);
@@ -21,7 +21,7 @@ export default function useFetchOrderList() {
       isRefresh ? setRefreshing(true) : setLoading(true);
       setErro(null);
 
-      const data = await OrderListService.fetchAllOrders();
+      const data = await OrderService.fetchAllOrders();
       setOrdem(data);
     } catch {
       setErro("Erro ao buscar as Ordens de Serviço");

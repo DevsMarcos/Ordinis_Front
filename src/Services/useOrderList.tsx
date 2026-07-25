@@ -22,7 +22,7 @@ type OrdemPost = {
   defeito: string;
 };
 
-export const OrderListService = {
+export const OrderService = {
   fetchAllOrders: async (): Promise<Order[]> => {
     const response = await api.get<Order[]>(`ordens/buscarOrdens`);
 

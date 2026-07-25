@@ -1,15 +1,17 @@
+import { OrderService } from "@/src/Services/useOrderList";
 import { ButtonsArea } from "@/src/styles/autenticacao/autenticacaoStyle";
 import {
-    GenericText,
-    GlobalContainer,
-    Input,
-    InputArea,
+  GenericText,
+  GlobalContainer,
+  Input,
+  InputArea,
 } from "@/src/styles/globalStyle";
 import { StyledButton, TextButton } from "@/src/styles/indexStyle";
 import { Container, StyledScrollView } from "@/src/styles/telaInicial/style";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { KeyboardAvoidingView, Platform } from "react-native";
+import { Alert, KeyboardAvoidingView, Platform } from "react-native";
 import { z } from "zod";
 
 type FormData = {
@@ -31,16 +33,28 @@ const schema = z.object({
 });
 
 export default function CadastrarOrdem() {
+  const [enviando, setEnviando] = useState(false);
+
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
 
-  function onSubmit(data: FormData) {
-    console.log(data);
+  async function onSubmit(data: FormData) {
+    setEnviando(true);
+    try {
+      await OrderService.createorder(data);
+      Alert.alert("Sucesso", "Ordem de serviço criada com sucesso!");
+      reset();
+    } catch (err) {
+      Alert.alert("Erro", "Não foi possível criar a ordem de serviço.");
+    } finally {
+      setEnviando(false);
+    }
   }
 
   return (
@@ -178,11 +192,7 @@ export default function CadastrarOrdem() {
               </StyledButton>
             </ButtonsArea>
             <ButtonsArea>
-              <StyledButton
-                onPress={handleSubmit(onSubmit, (errors) => {
-                  console.log("Erros de validação:", errors);
-                })}
-              >
+              <StyledButton onPress={handleSubmit(onSubmit)}>
                 <TextButton>Salvar Ordem de Serviço</TextButton>
               </StyledButton>
             </ButtonsArea>
