@@ -1,5 +1,11 @@
+import GenericCard from "@/src/Componentes/GenericCard/GenericCard";
 import useFetchOrderById from "@/src/Hooks/useFetchOrderById";
-import { GlobalContainer } from "@/src/styles/globalStyle";
+import {
+  CardsArea,
+  GenericText,
+  GlobalContainer,
+  StyledScrollView,
+} from "@/src/styles/globalStyle";
 import { useLocalSearchParams } from "expo-router";
 import { ActivityIndicator, Text } from "react-native";
 
@@ -26,9 +32,20 @@ export default function DetalhesOS() {
 
   return (
     <GlobalContainer>
-      <Text>{ordem.nomeDoCliente}</Text>
-      <Text>{ordem.produto}</Text>
-      {/* resto dos campos da ordem */}
+      <StyledScrollView>
+        <CardsArea>
+          <GenericCard>
+            <GenericText cor="#000" tamanho={20}>
+              Ordem de Serviço: {ordem.id}
+            </GenericText>
+          </GenericCard>
+          {/* 
+          <GenericCard />
+          <GenericCard />
+          <GenericCard />
+          <GenericCard /> */}
+        </CardsArea>
+      </StyledScrollView>
     </GlobalContainer>
   );
 }

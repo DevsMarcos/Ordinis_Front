@@ -1,0 +1,48 @@
+import styled from "styled-components/native";
+
+export const Card = styled.View`
+  width: 92%;
+  /* Remova o height: 25% e use um valor fixo ou deixe o padding ditar */
+  min-height: 100px;
+  background-color: #fff;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* Elevation 50 é muito alto! O padrão é entre 2 e 8 */
+  elevation: 4;
+
+  margin-vertical: 10px;
+  align-self: center; /* Centraliza o card sem precisar do align-items no pai */
+  padding: 20px;
+
+  /* Sombra para iOS */
+  shadow-color: #000;
+  shadow-offset: 0px 2px;
+  shadow-opacity: 0.1;
+  shadow-radius: 4px;
+`;
+
+export const OsInformatrionArea = styled.View`
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; /* Espaçamento entre o topo e os dados */
+`;
+
+export const StatusOrdem = styled.View<StatusProps>`
+  width: 45px; /* Use valores fixos para o círculo de status */
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: ${(props) => props.status || "#228b22"};
+`;
+
+export const OsInformatrion = styled.View`
+  /* Remova height: 80% */
+  gap: 4px; /* Espaçamento automático entre as linhas de texto */
+`;
+
+interface StatusProps {
+  status?: string;
+}

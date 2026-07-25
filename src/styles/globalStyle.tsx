@@ -57,3 +57,14 @@ export const CardsArea = styled.View`
   flex: 1;
   width: 100%;
 `;
+
+export const StyledScrollView = styled.ScrollView.attrs({
+  contentContainerStyle: {
+    paddingBottom: 30, // Dá um respiro no final da lista
+    paddingTop: "10%",
+    alignItems: "center", // Centraliza tudo horizontalmente
+  },
+})`
+  flex: 1;
+  width: 100%;
+`;
