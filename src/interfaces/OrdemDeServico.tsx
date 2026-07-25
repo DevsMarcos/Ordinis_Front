@@ -6,7 +6,7 @@ export interface OrdemDeServicoDTO {
   produto: String;
   marca: String;
   modelo: String;
-  caracteristicaProduto: String;
+  defeito: String;
   dataDeAbertura: string;
   dataFechamento: string;
 }
