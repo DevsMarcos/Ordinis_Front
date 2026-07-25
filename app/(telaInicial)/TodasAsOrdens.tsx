@@ -42,7 +42,9 @@ export default function TodasAsOrdens() {
               loading ? (
                 <ActivityIndicator color="#a78bfa" style={{ margin: 20 }} />
               ) : (
-                <Text style={{ textAlign: "center", margin: 20 }}>
+                <Text
+                  style={{ textAlign: "center", margin: 20, color: "#fff" }}
+                >
                   Nenhuma ordem encontrada
                 </Text>
               )

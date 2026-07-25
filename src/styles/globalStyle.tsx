@@ -48,7 +48,7 @@ interface InputProps {
 export const Input = styled.TextInput<InputProps>`
   width: 100%;
   height: ${(props) => props.height || 60}px;
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 25px;
   padding-left: 10px;
 `;
