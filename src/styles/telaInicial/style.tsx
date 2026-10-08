@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export const Container = styled.View<ContainerProps>`
   flex: 1;
-  background-color: #1a0046; /* Um cinza claro de fundo ajuda o card branco a destacar */
+  background-color: #1f1f1f; /* Um cinza claro de fundo ajuda o card branco a destacar */
   align-items: ${(props) => props.centralizacao};
   padding-top: 50px;
 `;

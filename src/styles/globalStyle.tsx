@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 
 export const GlobalContainer = styled.View`
   flex: 1;
-  background: #150039;
+  background: #1f1f1f;
 `;
 
 interface TextoProps {

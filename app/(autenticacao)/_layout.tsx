@@ -5,7 +5,7 @@ export default function LayoutAutenticacao() {
     <Stack
       screenOptions={{
         // Isso remove o nome feio e estiliza o cabeçalho para todas as telas do grupo
-        headerStyle: { backgroundColor: "#150039" },
+        headerStyle: { backgroundColor: "#1f1f1f" },
         headerTintColor: "#ffffff",
       }}
     >

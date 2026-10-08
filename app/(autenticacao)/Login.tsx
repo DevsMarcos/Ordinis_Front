@@ -3,14 +3,12 @@ import {
   Container,
   Input,
   InputArea,
-  Logo,
   LogoContainer,
 } from "@/src/styles/autenticacao/autenticacaoStyle";
 import { GenericText, GlobalContainer } from "@/src/styles/globalStyle";
 import { StyledButton } from "@/src/styles/indexStyle";
 import { useRouter } from "expo-router";
 import { KeyboardAvoidingView, Platform } from "react-native";
-import image from "../../assets/images/logo_gemini.png";
 
 export default function Login() {
   const router = useRouter();
@@ -20,9 +18,7 @@ export default function Login() {
         style={{ flex: 1 }}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
-        <LogoContainer>
-          <Logo source={image} />
-        </LogoContainer>
+        <LogoContainer></LogoContainer>
         <Container>
           <InputArea>
             <GenericText paddingLeft={10}>E-mail</GenericText>
