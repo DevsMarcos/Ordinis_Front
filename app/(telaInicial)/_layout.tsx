@@ -25,7 +25,7 @@ export default function TabLayout() {
           right: 0,
           backgroundColor: "#363636",
           borderTopWidth: 0,
-          height: 90,
+          height: 100,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
           elevation: 5, // Sombra para o Android não cortar o arredondado

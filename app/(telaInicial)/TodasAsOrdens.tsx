@@ -24,7 +24,7 @@ export default function TodasAsOrdens() {
       <Container centralizacao="center">
         <InputArea>
           <Image source={"../../"} />
-          <Input placeholder={"Pesquise o ID da OS ou o Nome do Cliente"} />
+          <Input placeholder={"Pesquisa"} placeholderTextColor={"#000"} />
         </InputArea>
 
         <CardsArea>
