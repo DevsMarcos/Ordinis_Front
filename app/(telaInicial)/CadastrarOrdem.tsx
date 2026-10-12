@@ -62,7 +62,7 @@ export default function CadastrarOrdem() {
       <Container>
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
-          style={{ flex: 1, paddingBottom: 50 }}
+          style={{ flex: 1, paddingBottom: 70 }}
         >
           <StyledScrollView>
             <GenericText marginBottom={40} tamanho={24}>
