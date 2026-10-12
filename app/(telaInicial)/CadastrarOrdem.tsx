@@ -1,3 +1,4 @@
+import SeletorDeFotos from "@/src/Componentes/SeletorDeFotos/SeletorDeFotos";
 import { OrderService } from "@/src/Services/useOrderList";
 import { ButtonsArea } from "@/src/styles/autenticacao/autenticacaoStyle";
 import {
@@ -33,7 +34,9 @@ const schema = z.object({
 });
 
 export default function CadastrarOrdem() {
+  console.log("SeletorDeFotos:", SeletorDeFotos);
   const [enviando, setEnviando] = useState(false);
+  const [fotos, setFotos] = useState<string[]>([]);
 
   const {
     control,
@@ -187,9 +190,7 @@ export default function CadastrarOrdem() {
             </InputArea>
 
             <ButtonsArea>
-              <StyledButton>
-                <TextButton>Adicionar Fotografia</TextButton>
-              </StyledButton>
+              <SeletorDeFotos fotos={fotos} onChange={setFotos} />
             </ButtonsArea>
             <ButtonsArea>
               <StyledButton onPress={handleSubmit(onSubmit)}>
