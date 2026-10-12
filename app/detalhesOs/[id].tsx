@@ -35,15 +35,50 @@ export default function DetalhesOS() {
       <StyledScrollView>
         <CardsArea>
           <GenericCard>
+            <GenericText cor="#000" tamanho={24} marginBottom={15}>
+              Dados da OS
+            </GenericText>
             <GenericText cor="#000" tamanho={20}>
-              Ordem de Serviço: {ordem.id}
+              Cliente: {ordem.nomeDoCliente}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Telefone: {ordem.telefone}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Data de Abertura: {ordem.dataDeAbertura}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Data de Fechamento: {ordem.dataFechamento}
             </GenericText>
           </GenericCard>
-          {/* 
-          <GenericCard />
-          <GenericCard />
-          <GenericCard />
-          <GenericCard /> */}
+        </CardsArea>
+
+        <CardsArea>
+          <GenericCard align="left">
+            <GenericText cor="#000" tamanho={24} marginBottom={15}>
+              Dados do Equipamento
+            </GenericText>
+            <GenericText cor="#000" tamanho={20}>
+              Tipo Produto: {ordem.produto}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Marca: {ordem.marca}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Modelo: {ordem.modelo}
+            </GenericText>
+            <GenericText cor="#000" tamanho={18}>
+              Serial:
+            </GenericText>
+          </GenericCard>
+        </CardsArea>
+
+        <CardsArea>
+          <GenericCard align="left">
+            <GenericText cor="#000" tamanho={24} marginBottom={15}>
+              Imagens do Produto
+            </GenericText>
+          </GenericCard>
         </CardsArea>
       </StyledScrollView>
     </GlobalContainer>

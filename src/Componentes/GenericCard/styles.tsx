@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Card = styled.View`
+export const Card = styled.View<CardProps>`
   width: 92%;
   /* Remova o height: 25% e use um valor fixo ou deixe o padding ditar */
   min-height: 100px;
@@ -8,7 +8,7 @@ export const Card = styled.View`
   border-radius: 20px;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: ${(props) => props.textAlign || "center"};
 
   /* Elevation 50 é muito alto! O padrão é entre 2 e 8 */
   elevation: 4;
@@ -45,4 +45,8 @@ export const OsInformatrion = styled.View`
 
 interface StatusProps {
   status?: string;
+}
+
+interface CardProps {
+  textAlign?: string;
 }

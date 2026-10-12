@@ -1,6 +1,8 @@
-import { Stack } from "expo-router";
+import { Stack, useLocalSearchParams } from "expo-router";
 
 export default function LayoutOs() {
+  const { id } = useLocalSearchParams<{ id: string }>();
+
   return (
     <Stack
       screenOptions={{
@@ -13,7 +15,7 @@ export default function LayoutOs() {
       <Stack.Screen
         name="[id]"
         options={{
-          title: "Todas as Ordens",
+          title: `OS #${id}`,
         }}
       />
     </Stack>
